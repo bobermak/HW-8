@@ -1,0 +1,117 @@
+
+.text-box h3:first-of-type {
+  color: pink;
+}
+
+
+#greycol {
+  color: grey;
+}
+
+
+.yellow {
+  color: yellow;
+}
+
+
+.text-box div p {
+  color: red;
+}
+
+
+.text-box p:not(.yellow):not(#greycol):not(-of-type) {
+  color: green;
+}
+
+
+.schedule-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+
+.monday {
+  color: white;
+  background-color: #ff7f7f;
+}
+
+.tuesday {
+  color: white;
+  background-color: #7fbbff;
+}
+
+.wednesday {
+  color: white;
+  background-color: #7fff7f;
+}
+
+.thursday {
+  color: white;
+  background-color: #ffeb3b;
+}
+
+.friday {
+  color: white;
+  background-color: #ff9800;
+}
+
+
+li {
+  padding: 10px;
+  list-style-type: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+li:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+li:focus {
+  outline: 2px solid #000;
+}
+
+li:active {
+  background-color: #333;
+}
+
+li:checked {
+  background-color: #8bc34a;
+}
+
+li:disabled {
+  background-color: #d3d3d3;
+  color: #888;
+}
+
+
+ul:first-of-type li {
+  font-weight: bold;
+}
+
+ul:last-of-type li {
+  text-decoration: underline;
+}
+
+ul:not(.friday) li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+ul:nth-of-type(2) li:nth-child(2) {
+  color: #d32f2f;
+}
+
+ul.monday li:nth-of-type(3) {
+  color: #ffeb3b;
+}
